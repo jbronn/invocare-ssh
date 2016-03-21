@@ -14,7 +14,7 @@ setup(name='invocare-ssh',
       description='SSH Invocations',
       license='Apache License 2.0',
       url='https://github.com/jbronn/invocare-ssh',
-      download_url='http://pypi.python.org/pypi/invocare-ssh/',
+      download_url='https://pypi.python.org/pypi/invocare-ssh/',
       install_requires=[
         'invocare>=0.1.0,<1.0.0',
       ],
