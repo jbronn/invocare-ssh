@@ -11,7 +11,7 @@ def ssh_hostkey_remove(ctx, host, hide=None, warn=False):
     """
     Cleans out SSH host key for given host.
     """
-    config = ctx.config.get('ssh-keygen', {})
+    config = ctx.config.get('ssh_hostkey', {})
     return ctx.run(
         'ssh-keygen -R {}'.format(config.get('host', host)),
         hide=config.get('hide', hide),
