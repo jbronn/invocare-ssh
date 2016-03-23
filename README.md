@@ -2,12 +2,12 @@
 
 Python [`invoke`](http://www.pyinvoke.org/) tasks for SSH activities.
 
-## `ssh_run`
+## `ssh`
 
-Runs a command on a host via SSH.  For example, running `ls -la` on `www.foo.com`:
+Runs a command on a host via SSH.  For example, running `ls -la` on `www.foo.com` as user `bob`:
 
 ```sh
-$ invoke ssh_run www.foo.com 'ls -la'
+$ invoke ssh www.foo.com "ls -la" --user bob
 ```
 
 Default options for this task may be set within the `ssh` configuration context.

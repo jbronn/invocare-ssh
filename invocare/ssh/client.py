@@ -10,9 +10,9 @@ from invoke import task
         'user': 'The login user for SSH.',
     }
 )
-def ssh_run(ctx, host, command, hide=False, user=None, warn=False):
+def ssh(ctx, host, command, hide=False, user=None, warn=False):
     """
-    Runs a remote command via SSH.
+    Runs a remote command via a local SSH invocation.
     """
     config = ctx.config.get('ssh', {})
     options = config.get('options', {})

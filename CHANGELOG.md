@@ -1,3 +1,7 @@
+## 0.2.0 (03/23/2016)
+
+* Rename `ssh_run` to `ssh`.
+
 ## 0.1.1 (03/21/2016)
 
 Change configuration context namespace for the `ssh_hostkey_remove` task.
