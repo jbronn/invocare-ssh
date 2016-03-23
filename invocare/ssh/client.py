@@ -1,5 +1,6 @@
 from invocare.util import shell_escape
 from invoke import task
+from invoke.vendor import six
 
 
 @task(
@@ -34,13 +35,7 @@ def ssh(ctx, host, command, hide=False, user=None, warn=False):
         ssh_cmd.append(host)
 
     # If command is a string, make a list.
-    try:
-        # TODO: use six.
-        string_command = isinstance(command, basestring)
-    except NameError:
-        string_command = isinstance(command, str)
-
-    if string_command:
+    if isinstance(command, six.string_types):
         command = [command]
 
     # Quote and escape all elements of the SSH command.  Join individual
