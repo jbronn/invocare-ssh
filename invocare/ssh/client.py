@@ -4,7 +4,6 @@ from invoke.vendor import six
 
 
 @task(
-    contextualized=True,
     help={
         'host': 'The host to run the SSH command on.',
         'command': 'The command to run over SSH.',

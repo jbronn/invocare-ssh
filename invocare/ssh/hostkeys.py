@@ -2,7 +2,6 @@ from invoke import task
 
 
 @task(
-    contextualized=True,
     help={
         'host': 'The host name to remove SSH keys for.',
     }
