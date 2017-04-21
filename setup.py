@@ -17,7 +17,7 @@ setup(name='invocare-ssh',
       url='https://github.com/jbronn/invocare-ssh',
       download_url='https://pypi.python.org/pypi/invocare-ssh/',
       install_requires=[
-        'invocare>=0.1.0,<1.0.0',
+        'invocare>=0.2.1,<1.0.0',
       ],
       packages=['invocare.ssh'],
       zip_safe=False,
